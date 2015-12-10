@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4644A18B1C19A404001C0CF8 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644A18A1C19A404001C0CF8 /* FourthViewController.swift */; };
+		4644A1901C19B798001C0CF8 /* FourthViewController.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4644A18F1C19B798001C0CF8 /* FourthViewController.xcdatamodel */; };
 		467395581C06183D00CB34B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 467395571C06183D00CB34B6 /* Default-568h@2x.png */; };
 		4673955A1C06216700CB34B6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467395591C06216700CB34B6 /* ThirdViewController.swift */; };
 		46B1405B1C05E74200F783D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B1405A1C05E74200F783D2 /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4644A18A1C19A404001C0CF8 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		4644A18F1C19B798001C0CF8 /* FourthViewController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FourthViewController.xcdatamodel; sourceTree = "<group>"; };
 		467395571C06183D00CB34B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		467395591C06216700CB34B6 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		46B140571C05E74200F783D2 /* LocationTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,9 +108,11 @@
 		46B140591C05E74200F783D2 /* LocationTab */ = {
 			isa = PBXGroup;
 			children = (
+				4644A18F1C19B798001C0CF8 /* FourthViewController.xcdatamodel */,
 				46B1405A1C05E74200F783D2 /* AppDelegate.swift */,
 				46B1405C1C05E74200F783D2 /* FirstViewController.swift */,
 				46B1405E1C05E74200F783D2 /* SecondViewController.swift */,
+				4644A18A1C19A404001C0CF8 /* FourthViewController.swift */,
 				467395591C06216700CB34B6 /* ThirdViewController.swift */,
 				46B140601C05E74200F783D2 /* Main.storyboard */,
 				46B140631C05E74300F783D2 /* Assets.xcassets */,
@@ -202,6 +208,11 @@
 				TargetAttributes = {
 					46B140561C05E74200F783D2 = {
 						CreatedOnToolsVersion = 7.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					46B1406C1C05E74300F783D2 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -269,7 +280,9 @@
 				46B1405F1C05E74200F783D2 /* SecondViewController.swift in Sources */,
 				46B1405B1C05E74200F783D2 /* AppDelegate.swift in Sources */,
 				4673955A1C06216700CB34B6 /* ThirdViewController.swift in Sources */,
+				4644A1901C19B798001C0CF8 /* FourthViewController.xcdatamodel in Sources */,
 				46B1405D1C05E74200F783D2 /* FirstViewController.swift in Sources */,
+				4644A18B1C19A404001C0CF8 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
