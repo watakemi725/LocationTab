@@ -16,13 +16,19 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
     
     var myLocationManager: CLLocationManager!
     
+    //グローバル平均3軸加速度
+    var GlobalAverageAccel = 0.0
+    
     @IBOutlet var kasokudox : UILabel!
     @IBOutlet var kasokudoy : UILabel!
     @IBOutlet var kasokudoz : UILabel!
+    @IBOutlet var kasokudoAve : UILabel!
     
     @IBOutlet var jiyairox : UILabel!
     @IBOutlet var jiyairoy : UILabel!
     @IBOutlet var jiyairoz : UILabel!
+    
+    
     
     @IBOutlet var conpas : UILabel!
     
@@ -54,19 +60,14 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
             self.jiyairox.text = String(format: "%.2f", gyro.x)
             self.jiyairoy.text = String(format: "%.2f", gyro.y)
             self.jiyairoz.text = String(format: "%.2f", gyro.z)
-            //
-            //            var attitude: CMAttitude = deviceManager.attitude
-            //            self.attitude_roll.text = String(format: "%.2f", attitude.roll)
-            //            self.attitude_pitch.text = String(format: "%.2f", attitude.pitch)
-            //            self.attitude_yaw.text = String(format: "%.2f", attitude.yaw)
-            //
-            //            var quaternion: CMQuaternion = attitude.quaternion
-            //            self.attitude_x.text = String(format: "%.2f", quaternion.x)
-            //            self.attitude_y.text = String(format: "%.2f", quaternion.y)
-            //            self.attitude_z.text = String(format: "%.2f", quaternion.z)
-            //            self.attitude_w.text = String(format: "%.2f", quaternion.w)
             
             
+            
+            1
+            
+            self.GlobalAverageAccel = sqrt((accel.x*accel.x)+(accel.y*accel.y)+(accel.z*accel.z))
+            
+            self.kasokudoAve.text = String(format: "%.2f", self.GlobalAverageAccel)
             
             
         })

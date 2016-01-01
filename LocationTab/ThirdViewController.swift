@@ -45,7 +45,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate {
         //位置情報の精度
         lm.desiredAccuracy = kCLLocationAccuracyBest
         //位置情報取得間隔(m)
-        lm.distanceFilter = 300
+        lm.distanceFilter = 1.0
         
         
         
@@ -61,17 +61,24 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate {
             let yValue = String(format:"%.2f", magneticField.y)
             let zValue = String(format:"%.2f", magneticField.z)
             
-            let average = (magneticField.x + magneticField.y + magneticField.z) / 3.0
+//            let average = (magneticField.x + magneticField.y + magneticField.z) / 3.0
             
-            let averageValue = String(format:"%.2f", average)
+//            let averageValue = String(format:"%.2f", average)
             
             self.magneticX.text = xValue
             self.magneticY.text = yValue
             self.magneticZ.text = zValue
-            self.magneticAverage.text = averageValue
+//            self.magneticAverage.text = averageValue
             
+            
+            //平均3軸磁気量を求めている
+            let magneticNum = (magneticField.x * magneticField.x)+(magneticField.y * magneticField.y)+(magneticField.z * magneticField.z)
+           self.magneticAverage.text = String(sqrt(magneticNum))
         }
-
+        
+//        func safeSqrt(x: Double) -> Double? {
+//            return x < 0.0 ? nil : sqrt(x)
+//        }
         
         // Do any additional setup after loading the view.
         

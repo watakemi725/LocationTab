@@ -44,7 +44,8 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         myLocationManager.delegate = self
         
         // 距離のフィルタ.
-        myLocationManager.distanceFilter = 100.0
+//        myLocationManager.distanceFilter = 100.0
+        myLocationManager.distanceFilter = 1.0
         
         // 精度.
         myLocationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters

@@ -23,7 +23,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>MoonRunner wants to track your run
+	<string>this wants to track your run
 MoonRunner wants to track your run</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>

@@ -16,8 +16,8 @@ class FourthViewController: UIViewController {
     
     var managedObjectContext: NSManagedObjectContext!
     
-//    var run: Run!
-
+    //    var run: Run!
+    
     
     var seconds = 0.0
     var distance = 0.0
@@ -26,7 +26,7 @@ class FourthViewController: UIViewController {
     @IBOutlet var timeLabel : UILabel!
     @IBOutlet var distanceLabel : UILabel!
     @IBOutlet var paceLabel : UILabel!
-
+    
     
     
     
@@ -42,7 +42,10 @@ class FourthViewController: UIViewController {
         }
         
         // Movement threshold for new events
-        _locationManager.distanceFilter = 10.0
+        //        _locationManager.distanceFilter = 10.0
+        _locationManager.distanceFilter = 1.0
+//        GPSの精度がdistanceFilter 1.0なら1m更新するごとに呼ばれるようになっている。
+        
         return _locationManager
     }()
     
@@ -105,7 +108,7 @@ class FourthViewController: UIViewController {
     
     //位置情報をとっていくよう
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        for location in locations as! [CLLocation] {
+        //        for location in locations as! [CLLocation] {
         for location in locations {
             if location.horizontalAccuracy < 20 {
                 //update distance
@@ -123,32 +126,32 @@ class FourthViewController: UIViewController {
     //走ったを保存しよう
     func saveRun() {
         // 1
-//        let savedRun = NSEntityDescription.insertNewObjectForEntityForName("Run",
-//            inManagedObjectContext: managedObjectContext!) as Run!
-//        savedRun.distance = distance
-//        savedRun.duration = seconds
-//        savedRun.timestamp = NSDate()
-//        
-//        // 2
-//        var savedLocations = [Location]()
-//        for location in locations {
-//            let savedLocation = NSEntityDescription.insertNewObjectForEntityForName("Location",
-//                inManagedObjectContext: managedObjectContext!) as Location!
-//            savedLocation.timestamp = location.timestamp
-//            savedLocation.latitude = location.coordinate.latitude
-//            savedLocation.longitude = location.coordinate.longitude
-//            savedLocations.append(savedLocation)
-//        }
-//        
-//        savedRun.locations = NSOrderedSet(array: savedLocations)
-//        run = savedRun
-//        
-//        // 3
-//        var error: NSError?
-//        let success = managedObjectContext!.save(error)
-//        if !success {
-//            print("Could not save the run!")
-//        }
+        //        let savedRun = NSEntityDescription.insertNewObjectForEntityForName("Run",
+        //            inManagedObjectContext: managedObjectContext!) as Run!
+        //        savedRun.distance = distance
+        //        savedRun.duration = seconds
+        //        savedRun.timestamp = NSDate()
+        //
+        //        // 2
+        //        var savedLocations = [Location]()
+        //        for location in locations {
+        //            let savedLocation = NSEntityDescription.insertNewObjectForEntityForName("Location",
+        //                inManagedObjectContext: managedObjectContext!) as Location!
+        //            savedLocation.timestamp = location.timestamp
+        //            savedLocation.latitude = location.coordinate.latitude
+        //            savedLocation.longitude = location.coordinate.longitude
+        //            savedLocations.append(savedLocation)
+        //        }
+        //
+        //        savedRun.locations = NSOrderedSet(array: savedLocations)
+        //        run = savedRun
+        //
+        //        // 3
+        //        var error: NSError?
+        //        let success = managedObjectContext!.save(error)
+        //        if !success {
+        //            print("Could not save the run!")
+        //        }
     }
     
     /*
