@@ -63,7 +63,7 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
             
             
             
-            1
+            
             
             self.GlobalAverageAccel = sqrt((accel.x*accel.x)+(accel.y*accel.y)+(accel.z*accel.z))
             

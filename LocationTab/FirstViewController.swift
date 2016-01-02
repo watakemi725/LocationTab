@@ -189,6 +189,7 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             print("NotDetermined")
         default:
             print("etc.")
+            
         }
         NSNotificationCenter.defaultCenter().postNotificationName("LabelHasbeenUpdated", object: nil)
         if (shouldIAllow == true) {
