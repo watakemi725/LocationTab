@@ -61,10 +61,6 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
             self.jiyairoy.text = String(format: "%.2f", gyro.y)
             self.jiyairoz.text = String(format: "%.2f", gyro.z)
             
-            
-            
-            
-            
             self.GlobalAverageAccel = sqrt((accel.x*accel.x)+(accel.y*accel.y)+(accel.z*accel.z))
             
             self.kasokudoAve.text = String(format: "%.2f", self.GlobalAverageAccel)
@@ -122,27 +118,6 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
             
         }
         
-        
-        
-        //
-        //        if ([CLLocationManager headingAvailable])
-        //        {
-        //            // インスタンスを生成
-        //            _locationManager = [[CLLocationManager alloc] init];
-        //
-        //            // デリゲートを設定
-        //            _locationManager.delegate = self;
-        //
-        //            // 何度動いたら更新するか（デフォルトは1度）
-        //            _locationManager.headingFilter = kCLHeadingFilterNone;
-        //
-        //            // デバイスの度の向きを北とするか（デフォルトは画面上部）
-        //            _locationManager.headingOrientation = CLDeviceOrientationPortrait;
-        //
-        //            // ヘディングイベントの開始
-        //            [_locationManager startUpdatingHeading];
-        //        }
-        //
         
     }
     
