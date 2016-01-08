@@ -31,13 +31,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-        
-        
-        
+ 
         lm = CLLocationManager()
         lm.delegate = self
         //位置情報取得の可否。バックグラウンドで実行中の場合にもアプリが位置情報を利用することを許可する

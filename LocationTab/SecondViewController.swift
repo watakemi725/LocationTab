@@ -28,8 +28,6 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
     @IBOutlet var jiyairoy : UILabel!
     @IBOutlet var jiyairoz : UILabel!
     
-    
-    
     @IBOutlet var conpas : UILabel!
     
     
