@@ -123,24 +123,7 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
         conpas.text = String(format:"%f deg",newHeading.magneticHeading)
         
     }
-    
-    //    // 緯度・経度を受信
-    //    　func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!){
-    //        　　locationLabel.text = String(format:"%f , %f",
-    //            　　　　newLocation.coordinate.latitude,
-    //            　　　　newLocation.coordinate.longitude)
-    //        　}
-    //
-    //    　// コンパスの値を受信
-    //    　func locationManager(manager:CLLocationManager, didUpdateHeading newHeading:CLHeading) {
-    //        　　　　headingLabel.text = String(format:"%f deg",newHeading.magneticHeading)
-    //        　}
-    
-    //    - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
-    //    {
-    //    CLLocationDirection heading = newHeading.magneticHeading;
-    //    self.textField.text = [NSString stringWithFormat:@"%.2f", heading];
-    //    }
+ 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
