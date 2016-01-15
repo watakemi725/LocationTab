@@ -110,10 +110,6 @@ class FirstViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         // Regionを作成.
         let myRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(myLocation, myLatDist, myLonDist);
         
-        
-        
-        
-        
         // ピンを生成.
         let myPin: MKPointAnnotation = MKPointAnnotation()
         
