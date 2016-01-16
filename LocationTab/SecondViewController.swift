@@ -42,7 +42,6 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
     
     override func viewDidAppear(animated: Bool) {
         
-        
         // Initialize MotionManager
         motionManager.deviceMotionUpdateInterval = 0.05 // 20Hz
         
@@ -116,7 +115,6 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
             
         }
         
-        
     }
     
     func locationManager(manager:CLLocationManager, didUpdateHeading newHeading:CLHeading){
@@ -124,7 +122,6 @@ class SecondViewController: UIViewController,CLLocationManagerDelegate {
         
     }
  
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
