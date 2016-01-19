@@ -69,8 +69,7 @@ class FourthViewController: UIViewController {
         timer.invalidate()
     }
     
-    
-    
+
     func eachSecond(timer: NSTimer) {
         seconds++
         let secondsQuantity = HKQuantity(unit: HKUnit.secondUnit(), doubleValue: seconds)
