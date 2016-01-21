@@ -27,8 +27,6 @@ class FourthViewController: UIViewController {
     @IBOutlet var distanceLabel : UILabel!
     @IBOutlet var paceLabel : UILabel!
     
-    
-    
     lazy var locationManager: CLLocationManager = {
         var _locationManager = CLLocationManager()
         _locationManager.delegate = self
