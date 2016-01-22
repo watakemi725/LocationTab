@@ -37,8 +37,6 @@ class FourthViewController: UIViewController {
             _locationManager.allowsBackgroundLocationUpdates = true
         }
         
-        // Movement threshold for new events
-        //        _locationManager.distanceFilter = 10.0
         _locationManager.distanceFilter = 1.0
 //        GPSの精度がdistanceFilter 1.0なら1m更新するごとに呼ばれるようになっている。
         
