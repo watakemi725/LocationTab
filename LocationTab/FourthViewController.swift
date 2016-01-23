@@ -115,7 +115,6 @@ class FourthViewController: UIViewController {
         }
     }
     
-    
     //走ったを保存しよう
     func saveRun() {
         // 1
