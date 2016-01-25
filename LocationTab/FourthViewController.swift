@@ -97,8 +97,6 @@ class FourthViewController: UIViewController {
     @IBAction func stop(){
         saveRun()
     }
-    
-    
     //位置情報をとっていくよう
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         //        for location in locations as! [CLLocation] {
