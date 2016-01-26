@@ -201,8 +201,6 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate {
         lm.startUpdatingLocation()
     }
     
-
-    
     func magnetCount(){
         
         
