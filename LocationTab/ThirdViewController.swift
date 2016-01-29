@@ -202,9 +202,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate {
     }
     
     func magnetCount(){
-        
-        
-        //
+                //
         //        if manager.deviceMotionAvailable{
         //            manager.deviceMotionUpdateInterval = 0.1
         //            manager.startDeviceMotionUpdatesToQueue(NSOperationQueue()){
