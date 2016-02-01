@@ -145,8 +145,6 @@ class FourthViewController: UIViewController {
     }
     
 
-    
-    
     // MARK: - CLLocationManagerDelegate
     
     
