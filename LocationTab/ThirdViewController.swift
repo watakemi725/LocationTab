@@ -79,7 +79,6 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate {
         // メンバー変数でないと動作しないので注意
         //        if #available(iOS 8.0, *) {
         
-        
         if #available(iOS 8.0, *) {
             pedometer = CMPedometer()
         } else {
@@ -192,7 +191,6 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate {
 //            // Fallback on earlier versions
 //        }
     }
-    
     @IBAction func refresh(){
         startStepCounting()
         magnetCount()
